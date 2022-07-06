@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>NASA APOD Carousel</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <header>
+    <h1> Space Trip </h1>
+    <input placeholder=" Enter a date (YYYY-MM-DD) " id='dateOne'> </input>
+    <input placeholder=" Enter a date (YYYY-MM-DD)" id='dateTwo'> </input>
+    <input placeholder=" Enter a date (YYYY-MM-DD)" id='dateThree'> </input>
+    <button id=go> Blast off! </button>
+  </header>
+
+<section aria-label="new image" class='main'>
+  <div class="carousel" data-carousel>
+    <button class="carousel-button prev" data-carousel-button="prev"> Previous </button>
+    <button class="carousel-button next" data-carousel-button="next"> Next </button>
+    <ul data-slides>
+      <li class="slide" data-active>
+        <h1 id="h1One"></h1>
+        <img id="imgOne" src=''>
+        <p id="pOne"></p>
+      </li>
+      <li class="slide">
+        <h1 id="h1Two"></h1>
+        <img id="imgTwo" src=''>
+        <p id="pTwo"></p>
+      </li>
+      <li class="slide">
+        <h1 id="h1Three"></h1>
+        <img id="imgThree" src=''>
+        <p id="pThree"></p>
+      </li>
+    </ul>
+  </div>
+  <footer></footer>
+
+</section>
+
+  <script src="nasa.js"></script>
+  </body>
+</html>
